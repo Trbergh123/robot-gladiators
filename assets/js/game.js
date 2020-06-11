@@ -11,7 +11,7 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 
 var fight = function(enemyName) {
      // fight function statements
-
+    while(enemyHealth > 0) {
 
 for(var i= 0; i < enemyNames.length; i++) {
 }
@@ -77,7 +77,10 @@ if (promtFight === "fight" || promtFight ==="FIGHT"){
     window.alert("You need to pick a valid option. Try again!");
 }
 }
+}
 
 for(var i= 0; i < enemyNames.length; i++) {
-    fight(enemyNames[i]);
+    var pickedEnemyName = enemyNames [i]
+    enemyHealth = 50;
+    fight(pickedEnemyName);
 }
